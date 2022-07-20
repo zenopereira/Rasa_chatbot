@@ -1,0 +1,59 @@
+version: "2.0"
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- dragons_intro
+- dragons_services
+- dragons_clients
+- dragons_contact
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_dragons_intro:
+  - text: 72 Dragons’ global production services team supports many types of creative organizations across a broad range of services. We can shoot and edit videos for your organization in any location in the world. We can provide printed media support, including book design and publication. We also can build a fresh looking website to suit your needs. For filmmakers, we provide a large number of options for local and global support to make your production better at the lowest cost possible while enhancing quality. Contact us for our many offerings and begin working with us today.
+  utter_dragons_services:
+  - text: 72 Dragons’ global production services include Video Services, Publication Services, Website Services, Short And Feature Film Production Services, Web Series Production Services, Documentary Services, Post Production Services, Campaign Support Services, Promotional Material Services, Exhibition Management Services, Event Management Services, Social Media Management Services,Organization And Mission Support Services, Conference Video Services, Conference Support Services. 
+  utter_dragons_clients:
+  - text: 72 Dragons’ global production clients are in verticals like Film & Actiing, Art & Gallery and Health.
+  utter_dragons_contact:
+  - text: You can contact 72 Dragons’ global production via email, contact@72dragonsservices.com for general enquiry and  consultation@72dragonsservices.com for consultation.
+   
+actions:
+- utter_greet
+- utter_happy
+- utter_cheer_up
+- utter_did_that_help
+- utter_goodbye
+- utter_iamabot
+- utter_dragons_intro
+- utter_dragons_services
+- utter_dragons_clients
+- utter_dragons_contact
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
